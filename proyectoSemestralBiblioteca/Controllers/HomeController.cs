@@ -15,15 +15,21 @@ namespace proyectoSemestralBiblioteca.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "DESCRIPTION PAGE";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "CONTACT US";
 
+            return View();
+        }
+
+        public ActionResult HelloWorld()
+        {
+            ViewBag.Message = "Your hello world Page";
             return View();
         }
     }
