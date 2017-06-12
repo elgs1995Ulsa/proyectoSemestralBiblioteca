@@ -1,0 +1,48 @@
+﻿@model proyectoSemestralBiblioteca.Models.Geolocalizacion
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Geolocalizacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreLocalizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreLocalizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.latitudLocalizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitudLocalizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitudLocalizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitudLocalizacion)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,42 @@
+﻿@model proyectoSemestralBiblioteca.Models.Geolocalizacion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Geolocalizacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreLocalizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreLocalizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.latitudLocalizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitudLocalizacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitudLocalizacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitudLocalizacion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idLocalizacion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

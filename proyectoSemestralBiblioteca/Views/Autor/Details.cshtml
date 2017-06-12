@@ -1,0 +1,66 @@
+﻿@model proyectoSemestralBiblioteca.Models.Autor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Autor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreAutor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreAutor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoPaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoPaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apellidoMaterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apellidoMaterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nacionalidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nacionalidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaNacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaNacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obrasSobresalientes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obrasSobresalientes)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idAutor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

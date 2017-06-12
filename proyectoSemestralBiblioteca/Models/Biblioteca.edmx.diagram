@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="05ccb3d1db3b46299e3f463900b55695" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetRoles" Width="1.5" PointX="0.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.AspNetUsers" Width="1.5" PointX="3" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Autor" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.costo" Width="1.5" PointX="0.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Editorial" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Ejemplar" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Estante" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Genero" Width="1.5" PointX="0.75" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.historial" Width="1.5" PointX="5.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Libro" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Persona" Width="1.5" PointX="5.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.prestamo" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Venta" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__historial__idUsu__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Persona__idUsuar__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__prestamo__idUsua__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Venta__idUsuario__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Libro__idAutor__0B91BA14" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Libro__idCosto__0C85DE4D" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Libro__idEditori__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Libro__idEjempla__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Libro__idEstante__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Libro__idGenero__10566F31" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__prestamo__idLibr__0A9D95DB" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK__Venta__idLibro__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model.Geolocalizacion" Width="1.5" PointX="8.375" PointY="5.75" />
+        <EntityTypeShape EntityType="Model.Locations" Width="1.5" PointX="8.375" PointY="8.75" />
+        <EntityTypeShape EntityType="Model.Ubicacion" Width="1.5" PointX="5.375" PointY="9.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

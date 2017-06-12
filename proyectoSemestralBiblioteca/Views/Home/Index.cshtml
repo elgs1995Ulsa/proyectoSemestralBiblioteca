@@ -2,30 +2,256 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sistema Bibliotecario</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/custom.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" href="~/images/favicon.ico" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+          rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div id="logo">
+                <img src="~/images/logoUlsa.png" width="600" height="100" alt="Freshdesign" />
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal fade in" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal Content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            &times
+                        </button>
+                        <h4 class="modal-title">
+                            Sign-In
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div role="form">
+                            <div class="form-group">
+                                <asp:Label ID="Label1" runat="server" Text="UserName"></asp:Label>
+                                <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+                                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <hr class="divider">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <asp:CheckBox ID="chkRemberme" runat="server" Text="Remember Me" CssClass="checkbox-inline" />
+                                        |
+                                        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="text-primary">Forgot Password ?</asp:LinkButton>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <span class="pull-right">
+                                            <asp:Button ID="btnSumbit" CssClass="btn btn-success" runat="server" Text="Submit" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Landing Page -->
+        <div class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="intro-message col-sm-6">
+                        <h1>
+                            BiblioULSA
+                        </h1>
+                        <h2>
+                            Sistema Bibliotecario
+                        </h2>
+                        <h3>
+                            Para Estudiantes de la Universidad La Salle Oaxaca
+                        </h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://twitter.com/ulsa_oaxaca?lang=es" class="btn btn-success btn-lg">
+                                    <i class="fa fa-twitter fa-fw">
+                                    </i><span class="network-name">Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/lasalleoaxaca/?fref=ts" class="btn btn-primary btn-lg">
+                                    <i class="fa fa-facebook fa-fw"></i><span class="network-name">facebook</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Start Our Services -->
+        <div id="our-services">
+            <div class="container padding-top padding-bottom">
+                <div class="row section-title text-center">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <h1>
+                            <span>Nuestros</span> Servicios
+                        </h1>
+                        <h1>
+                            <span>Reservas</span>
+                        </h1>
+                        <p>
+                            Este servicio asegura la disponibilidad de las obras requeridas para los cursos que se imparten en los distintos programas de estudio de El Colegio de México.
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+                            De acuerdo con el Reglamento de Servicios pueden declararse “en reserva” : * Las obras señaladas por los profesores y sus auxiliares en relación con los cursos
+
+                            que ellos impartan en El Colegio de México, durante su duración. * Las obras señaladas por los investigadores y auxiliares en relación con un proyecto de investigación,
+
+                            durante el tiempo que éstos se encuentren en proceso. * Las obras señaladas por la Biblioteca, a instancias de cualquier lector interesado, o en vista de su demanda.
+
+                            El usuario o grupo de usuarios que deseen reservarse la consulta de determinadas obras deben solicitar la reserva de esos materiales en la Coordinación de Servicios .
+
+                            Las reglas de préstamo de estos materiales son establecidas por la Coordinación de Servicios.
+                        </p>
+                        <h1>
+                            <span>Prestamos Interbibliotecario</span>
+                        </h1>
+                        <p>
+                            El Préstamo Interbibliotecario es el proceso mediante el cual una biblioteca puede obtener de otra materiales que no se encuentran en su acervo, con la finalidad de
+
+                            satisfacer las necesidades de sus usuarios. A su vez se corresponde con el mismo préstamo en términos de equidad,  reciprocidad y respeto a las políticas de cada uno
+
+                            de los miembros.
+
+                            Si desea establecer un convenio con nuestra Biblioteca, deberá seguir nuestras Políticas de préstamo interbibliotecario y llenar el Formulario de registro.
+
+                            El servicio se rige por el Reglamento de préstamo interbibliotecario aprobado por la Red de Instituciones Mexicanas para la Cooperación Bibliotecaria.
+                        </p>
+                        <h1>
+                            <span>Prestamos En Sala</span>
+                        </h1>
+                        <p>
+                            El préstamo dentro de la Biblioteca se ofrece tanto a la comunidad de El Colegio como a estudiantes, profesores e investigadores de instituciones de educación superior,
+
+                            servidores públicos y en general a la comunidad académica nacional e internacional.
+
+                            Para solicitar los materiales el usuario debe llenar y entregar en el Mostrador de Préstamo una papeleta de solicitud por cada obra solicitada. Es requisito indispensable
+
+                            que el usuario externo presente una identificación vigente con fotografía al momento de recibir los materiales.
+                        </p>
+                        <h1>
+                            <span>Cubiculos de Estudio</span>
+                        </h1>
+                        <p>
+                            Los cubículos de estudio en la planta de acceso de la Biblioteca están disponibles, sin trámite alguno, para los usuarios internos y externos. Los cubículos ubicados en
+
+                            las áreas del acervo de la Biblioteca son exclusivos para los usuarios internos y otros lectores autorizados a tener acceso a la estantería.
+                        </p>
+                        <h1>
+                            <span>Fotocopiado</span>
+                        </h1>
+                        <p>
+                            La Biblioteca cuenta con autoservicio externo de fotocopiado mediante el uso de tarjetas de prepago que tienen un costo de $38.00 por 100 copias. El prepago se efectua en
+
+                            el área de fotocopiado ubicada en la planta de acceso de la Biblioteca. El usuario es responsable de la duplicación de obras y debe atenerse a lo establecido en la Ley de
+
+                            derechos de autor vigente en la República Mexicana.
+                        </p>
+                    </div>
+                </div>
+                <!-- /# Our Services -->
+                <!-- Slider -->
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="~/images/sli0.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="~/images/sli1.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="~/images/sli2.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="~/images/sli3.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="~/images/sli4.jpg" />
+                        </div>
+                        <div class="item">
+                            <img src="~/images/sli5.jpg" />
+                        </div>
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">
+                            Previous
+                        </span>
+                    </a><a class="right carousel-control" href="#myCarousel" role="button"
+                           data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true">
+                        </span><span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="container padding-bottom">
+                    <div class="row section-title text-center">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <h1>
+                                <span>Nuestras</span> Editoriales
+                            </h1>
+                            <p>
+                                Estas son algunas de todas las editoriales que encontrarás dentro de nuestras
+                                instalaciones.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center our-clients">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img class="img-responsive" src="~/images/AmazonEdit.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-responsive" src="~/images/gandhi.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-responsive" src="~/images/GrijalboEdit.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-responsive" src="~/images/logoAcco.jpg" alt="" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-responsive" src="~/images/oz-editorial.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/our-clients -->
+                </div>
+
+</body>
+</html>
